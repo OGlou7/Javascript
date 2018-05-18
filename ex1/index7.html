@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercice_7</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <form onsubmit="myfunction()">
+            <label for="pointure">Pointure : </label><input type="text" id="pointure" name="pointure"/><br/>
+            <label for="annee">Année de naissance : </label><input type="text" id="annee" name="annee"/><br/>
+            <button id="valider" name="valider">Valider</button>
+        </form>
+        <script>
+        function myfunction() {
+          var pointure = Number (document.getElementById("pointure").value);
+          var annee = Number (document.getElementById("annee").value);
+          resultat = ((((pointure * 2 + 5)* 50) - annee)+ 1766);
+          alert(resultat);
+        }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercice_01</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+      <button type="button" name="button" onclick="surfaceRectangle()">Calculer la surface d'un rectangle.</button>
+      <button type="button" name="button" onclick="periRectangle()">Calculer le périmètre d'un rectangle.</button>
+      <script type="text/javascript">
+      function surfaceRectangle() {
+       var largeur = prompt('Entrez la largeur');
+       var longueur = prompt('Entrez la longueur');
+       alert('La surface du rectangle ' + largeur * longueur);
+      }
+      function periRectangle() {
+        var largeur = prompt('Entrez la largeur');
+        var longueur = prompt('Entrez la longueur');
+        alert('Le périmètre du rectangle ' + (largeur + longueur)*2);
+      }
+      
+      </script>
+    </body>
+  </html>

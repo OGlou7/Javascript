@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Exercice 08</title>
+</head>
+
+<body>
+    <button type="button" name="button" onclick="jourDeLaSemaine()">Affiche</button>
+  <script>
+  function jourDeLaSemaine(){
+      var jour = new Date().getDay()
+        switch(jour){
+          case 0:
+          alert(jour = "Dimanche");
+            break;
+          case 1:
+            alert(jour = "Lundi");
+             break;
+          case 2:
+            alert(jour = "Mardi");
+            break;
+          case 3:
+            alert(jour = "Mercredi");
+              break;
+        case 4:
+            alert(jour = "Jeudi");
+              break;
+          case 5:
+            alert(jour = "Vendredi");
+            break;
+          case 6:
+           alert(jour = "Samedi");
+            break;
+          default:
+            alert(jour = "Unconnue");
+            break;
+        }
+      }
+
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercice_5</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <form onsubmit="myfunction()">
+            <label for="premier_nombre">Premier nombre : </label><input type="text" id="premier_nombre" name="premier_nombre"/><br/>
+            <label for="deuxieme_nombre">Deuxième nombre : </label><input type="text" id="deuxieme_nombre" name="deuxieme_nombre"/><br/>
+            <button  id="valider" name ="valider">Valider</button>
+        </form>
+      <script>
+      function myfunction() {
+        var test1 = document.getElementById("premier_nombre").value;
+        var test2 = document.getElementById("deuxieme_nombre").value;
+        Math.floor(test1);
+        alert(test1 * test2);
+      }
+      </script>
+    </body>
+</html>

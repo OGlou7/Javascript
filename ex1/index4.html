@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercice_4</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <form onsubmit="myfunction()">
+            <label for="nom">Nom : </label><input type="text" name="nom" id="nom"/>
+            <label for="prenom">Prénom : </label><input type="text" name="prenom" id="prenom"/>
+            <label for="ville">Ville : </label><input type="text" name="ville" id="ville"/>
+            <button  name="valider" id="valider">Valider</button>
+        </form>
+       <script>
+
+       function myfunction() {
+         var test1 = 'Nom: ' + document.getElementById("nom").value;
+         var test2 = 'Prenom: ' + document.getElementById("prenom").value;
+         var test3 = 'Ville: ' + document.getElementById("ville").value;
+         alert(test1 + '\n' + test2 + '\n' + test3);
+       }
+
+      </script>
+    </body>
+</html>
